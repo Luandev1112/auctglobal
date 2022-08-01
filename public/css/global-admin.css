@@ -1,0 +1,68 @@
+.navbar-brand {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.navbar-brand>img {
+    max-height: 49px;
+}
+
+.form-auth-style .form-group {
+    position: relative;
+}
+.form-auth-style .form-control.has-error + .validation-error p {
+    bottom: -12px;
+    /*left: 0;*/
+}
+.ajax-loader {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    background-color: rgba(255, 255, 255, 1);
+    display: none;
+    width: 160px;
+    height: 40px;
+    border-radius: 2px;
+    z-index: 9999989;
+    -webkit-box-shadow: 0 0px 20px rgba(0, 0, 0, .2);
+    box-shadow: 0 0px 20px rgba(0, 0, 0, .2);
+    margin-left: -80px;
+    margin-top: -20px;
+    text-align: center;
+    padding: 6px;
+}
+.ajax-loader img {
+    width: 30px;
+}
+
+
+.validation-error {
+    display: block;
+    background: #fff4f2;
+    color: #e4391f;
+    padding: 3px 10px;
+}
+.validation-error p {
+    margin: 0;
+}
+.form-control.has-error {
+    border-color: #ffd2ca;
+}
+.form-control.has-error:focus {
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(255, 91, 62, 0.6);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(255, 91, 62, 0.6)
+}
+.form-control + .validation-error {
+    display: none;
+}
+.form-control.has-error + .validation-error {
+    display: block;
+}
+.form-control.has-error + .validation-error p {
+    margin: 0;
+    font-size: 13px;
+    position: absolute;
+    bottom: -25px;
+}
+.validation-align .form-control.has-error + .validation-error p {
+    position: static;
+}
